@@ -1,0 +1,60 @@
+<?php
+
+$number1 = 42;
+$number2 = 33;
+?>
+<style>
+   .red {
+	color:red;
+}
+
+.blue {
+	color:blue;
+} 
+</style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Exercice 2 echo</title>
+	</head>
+	<body>
+		<p>
+    <?php  
+    if($number1 % 2 === 0)
+    {
+    ?>
+        <p class="red">
+            <?php echo $number1; ?>
+        </p>
+        <?php
+    }
+    else
+    { ?>
+        <li class="blue">
+            <?php echo $number1; ?>
+        </li>
+    <?php } ?>
+</p>
+
+<p>
+    <?php  
+    if($number2 % 2 === 0)
+    {
+    ?>
+        <p class="red">
+            <?php echo $number2; ?>
+        </p>
+        <?php }
+    else { 
+    ?>
+        <p class="blue">
+            <?php echo $number2; ?>
+        </p>
+    <?php
+    } ?>
+</p>
+	</body>
+</html>
